@@ -1,0 +1,1 @@
+A simple weather APP. Created as part of the ODIN project full stack development learning process. 
