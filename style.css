@@ -1,5 +1,20 @@
 html{
 background-color:skyblue;
+}
 
-
+.weather-popup
+{
+background-color: slateblue;
+border: dotted white;
+border-radius: 1%;
+color: white;
+font-weight: bold;
+font-size: 2em;
+height: 400px;
+left: 50%;
+position: absolute;
+text-align: center;
+top: 50%;
+transform: translate(-200px, -200px);
+width: 400px;
 }

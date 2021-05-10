@@ -6,7 +6,21 @@
   <title>Document</title>
 </head>
 <body>
-  <script src="weather.js"></script>
+    <center><input id="city" type="text" maxlength="19"><button onclick="grabInput()" id="submit" >Submit Stuff</button></center>
+
+<div id="weatherpopup" class="weather-popup">
+    <div id="location-title">Location: <div id="location"></div></div><br>
+    <div id="temperature-title">Temperature: <div id="temperature"></div></div><br>
+    <div id="humidity-title">Humidity:<div id="humidity"></div></div><br>
+
+    <div id="feels-like-title">Feels Like:<div id="feels-like"></div></div><br>
+    <div id="conditions-title"><div id="condition"></div></div><br>
+    <div id="wind"></div>
+    <div id="other"></div>
+</div>
+
 
 </body>
+
+<script src="weather.js"></script>
 </html>
