@@ -9,14 +9,19 @@
     <center><input id="city" placeholder="City" type="text" maxlength="19"><button onclick="grabInput()" id="submit">Submit Stuff</button></center>
 
 <div id="weatherpopup" class="weather-popup">
-     <div id="location"></div><br>
-    <div id="temperature-title">Temperature: <div id="temperature"></div></div><br>
-    <div id="humidity-title">Humidity:<div id="humidity"></div></div><br>
+    <div id="upper">
+        <div id="location" class="city"></div><br>
+        <div id="temperature" class="temp"></div><br>
+        <div id="feels-like-title">Feels Like:<div id="feels-like"></div></div><br>
+    </div>
 
-    <div id="feels-like-title">Feels Like:<div id="feels-like"></div></div><br>
-    <div id="conditions-title"><div id="condition"></div></div><br>
-    <div id="wind"></div>
-    <div id="other"></div>
+    <div id="extras" class="extra-info">
+        <div id="humidity-title">Humidity:</div>
+        <div id="condition-title">Conditions:</div>
+
+        <div id="humidity"></div>
+        <div id="condition"></div>
+    </div>
 </div>
 
 
