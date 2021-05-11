@@ -3,7 +3,7 @@
 let weatherInformation = {};
 
 function grabInput(){
-let citySelection = document.getElementById('city').value;
+let citySelection = document.getElementById('search').value;
 getLocationDetails(citySelection);
 }
 
@@ -85,6 +85,16 @@ function populateWeather(){
     populateWeather();
     })
     .catch ((error) => { console.log(error);});
+    })();
+
+
+    (function setUpInput (){
+        let searchBar = document.getElementById('search');
+        searchBar.addEventListener('keypress', function(e){
+            if(e.key === 'Enter'){
+                grabInput();
+            }
+        });
     })();
     
 

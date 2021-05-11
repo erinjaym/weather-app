@@ -20,6 +20,15 @@ transform: translate(-200px, -200px);
 width: 400px;
 }
 
+.weather-popup-background-blur
+{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    height: 400px;
+    transform: translate(-200px, -200px);
+    width: 400px;
+}
+
 .city
 {
 font-size: 2em;
@@ -35,3 +44,14 @@ font-size: 2.3em;
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
+
+input[type=text] {
+    background-image: url('./images/search.png');
+    background-repeat: no-repeat;
+    background-position: 4px 2px; 
+    box-sizing: border-box;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 20px 20px 13px 60px;
+  }
