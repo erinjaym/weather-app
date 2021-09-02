@@ -6,28 +6,33 @@
   <title>Document</title>
 </head>
 <body>
-    <center><input id="search" placeholder="Search for City" type="text" maxlength="19"></center><br>
-    <center><button onclick="grabInput()" id="submit">Get Weather</button></center>
 
-<div id="background-blur" class="weather-popup-background-blur"></div>    
-
-<div id="weatherpopup" class="weather-popup">
-    <div id="upper">
-        <div id="location" class="city"></div><br>
-        <div id="temperature" class="temp"></div><br>
-        <div id="feels-like-title">Feels Like:<div id="feels-like"></div></div><br>
-    </div>
-
-    <div id="extras" class="extra-info">
-        <div id="humidity-title">Humidity:</div>
-        <div id="condition-title">Conditions:</div>
-
-        <div id="humidity"></div>
-        <div id="condition"></div>
-    </div>
-</div>
-
-
+    <div id="background-wrapper" class="background-wrapper">
+        <div id="content-wrapper" class="content-wrapper">
+        
+            <input id="search" placeholder="Search for City" type="text" maxlength="19"><br>
+            <button onclick="grabInput()" id="submit">Check Weather</button><br />
+        
+            <div id="weatherpopup" class="weather-popup"> 
+            <div id="upper">
+                <div id="location" class="city"></div><br>
+                <div id="temperature" class="temp"></div><br>
+                <div id="feels-like-title">Feels Like:<div id="feels-like"></div></div><br>
+                </div>
+        
+                <div id="extras" class="extra-info">
+                <div id="humidity-title">Humidity:</div>
+                <div id="condition-title">Conditions:</div>
+        
+                <div id="humidity"></div>
+                <div id="condition"></div>
+            </div>
+        
+            </div>
+        </div>
+        
+        </div>
+        
 </body>
 
 <script src="weather.js"></script>

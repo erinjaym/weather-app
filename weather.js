@@ -39,13 +39,17 @@ function populateWeather() {
 
     let stringToSearch = weatherInformation.weather[0].description;
     if (stringToSearch.match(findSnow)) {
-      document.body.style.backgroundImage = "url('./images/snow.jpeg')";
+      let display = document.getElementById("background-wrapper");
+      display.style.backgroundImage = "url('./images/snow.jpeg')"
     } else if (stringToSearch.match(findRain)) {
-      document.body.style.backgroundImage = "url('./images/rain.jpeg')";
+      let display = document.getElementById("background-wrapper");
+      display.style.backgroundImage = "url('./images/rain.jpeg')";
     } else if (stringToSearch.match(findClouds)) {
-      document.body.style.backgroundImage = "url('./images/clouds.jpeg')";
+      let display = document.getElementById("background-wrapper");
+      display.style.backgroundImage = "url('./images/clouds.jpeg')";
     } else if (stringToSearch.match(findClear)) {
-      document.body.style.backgroundImage = "url('./images/clear.jpeg')";
+      let display = document.getElementById("background-wrapper");
+      display.style.backgroundImage = "url('./images/clear.jpeg')";
     }
   })();
 

@@ -1,5 +1,5 @@
 body {
-  background-color: skyblue;
+  background-color: #191970;
   background-size: cover;
   background-repeat: no-repeat;
 -webkit-background-size: cover;
@@ -14,12 +14,9 @@ body {
   font-weight: bold;
   font-size: 1.5em;
   height: 400px;
-  left: 50%;
-  position: absolute;
+  position: relative;
   text-align: center;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  top: 50%;
-  transform: translate(-200px, -200px);
   width: 400px;
 }
 
@@ -27,7 +24,6 @@ body {
   filter: blur(2px);
   -webkit-filter: blur(2px);
   height: 400px;
-  transform: translate(-200px, -200px);
   width: 400px;
 }
 
@@ -54,3 +50,34 @@ input[type="text"] {
   font-size: 20px;
   padding: 20px 20px 13px 60px;
 }
+
+.content-wrapper{
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.background-wrapper{
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+min-height: 700px;
+}
+
+button{
+background-color: darkblue;
+border: 2px solid darkblue;
+color: white;
+font-size: 2em;
+padding: 5px;
+}
+
+button:hover{
+  background-color: white;
+  color: darkblue;
+  font-size: 2em;
+  padding: 5px;
+  }
